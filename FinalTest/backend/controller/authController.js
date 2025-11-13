@@ -138,9 +138,9 @@ export const sendOtp = async (req, res) => {
     });
     console.log("ENV TEST:", process.env.EMAIL_USER, process.env.EMAIL_PASS);
     await transporter.sendMail({
-      from: `"EduPress" <${process.env.EMAIL_USER}>`,
+      from: `"DashStack" <${process.env.EMAIL_USER}>`,
       to: email,
-      subject: "OTP Change EduPress password",
+      subject: "OTP Change DashStack password",
       html: `<p>Your OTP code is: <strong>${otp}</strong>. Expires in 5 minutes.</p>`,
     });
 
